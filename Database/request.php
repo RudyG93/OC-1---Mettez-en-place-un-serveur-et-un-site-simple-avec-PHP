@@ -11,7 +11,7 @@ function getOeuvres(): array
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function insertOeuvre()
+function insertOeuvre(): bool
 {
     $dbConnection = connect();
 
